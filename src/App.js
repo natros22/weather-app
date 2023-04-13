@@ -9,7 +9,7 @@ export default function App() {
   
 const searchLocation =(event) => {
   if(event.key === "Enter"){
-  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=6443b4f79d862cfd235ddc0671169df5`)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}apikey`)
   .then(responce => responce.json())
   .then(data => setData(data),
     console.log(data))
